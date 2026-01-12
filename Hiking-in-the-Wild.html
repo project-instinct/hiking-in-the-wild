@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./Hiking-in-the-Wild_files/bulma-carousel.min.css">
   <link rel="stylesheet" href="./Hiking-in-the-Wild_files/bulma-slider.min.css">
   <link rel="stylesheet" href="./Hiking-in-the-Wild_files/fontawesome.all.min.css">
-  <link rel="stylesheet" href="./Hiking-in-the-Wild_files/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./Hiking-in-the-Wild_files/index.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
@@ -42,7 +42,7 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Hiking in the Wild: A Scalable End-to-End Perceptive Framework for Humanoids</h1>
+          <h1 class="title is-1 publication-title">Hiking in the Wild: A Scalable Perceptive Parkour <br>Framework for Humanoids</h1>
           <div class="is-size-4 publication-authors">
             <span class="author-block">
               <a href="https://shaotingzhu.github.io/">Shaoting Zhu</a>*&nbsp;&nbsp;&nbsp;
@@ -284,7 +284,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Achieving robust humanoid hiking in complex, unstructured environments requires transitioning from reactive proprioception to proactive perception. However, integrating exteroception remains a significant challenge: mapping-based methods suffer from state estimation drift; for instance, LiDAR-based methods do not handle torso jitter well. Existing end-to-end approaches often struggle with scalability and training complexity; specifically, some previous works using virtual obstacles are implemented case-by-case. In this work, we present <b><i>Hiking in the Wild</i></b>, a scalable, end-to-end perceptive framework designed for robust humanoid hiking. To ensure safety and training stability, we introduce two key mechanisms: a foothold safety mechanism combining scalable <b><i>Terrain Edge Detection</i></b> with <b><i>Foot Volume Points</i></b> to prevent catastrophic slippage on edges, and a <b><i>Flat Patch Sampling</i></b> strategy that eliminates reward hacking by generating feasible navigation targets. Our approach utilizes a single-stage reinforcement learning scheme, mapping raw depth inputs and proprioception directly to joint actions, without relying on external state estimation. Extensive field experiments on a full-size humanoid demonstrate that our policy enables robust traversal of stairs, slopes, and discrete gaps at speeds up to 2.5 m/s. The training and deployment code is open-sourced to facilitate reproducible research and deployment on real robots with minimal hardware modifications.
+            Achieving robust humanoid hiking in complex, unstructured environments requires transitioning from reactive proprioception to proactive perception. However, integrating exteroception remains a significant challenge: mapping-based methods suffer from state estimation drift; for instance, LiDAR-based methods do not handle torso jitter well. Existing end-to-end approaches often struggle with scalability and training complexity; specifically, some previous works using virtual obstacles are implemented case-by-case. In this work, we present <b><i>Hiking in the Wild</i></b>, a scalable, end-to-end perceptive parkour framework designed for robust humanoid hiking. To ensure safety and training stability, we introduce two key mechanisms: a foothold safety mechanism combining scalable <b><i>Terrain Edge Detection</i></b> with <b><i>Foot Volume Points</i></b> to prevent catastrophic slippage on edges, and a <b><i>Flat Patch Sampling</i></b> strategy that eliminates reward hacking by generating feasible navigation targets. Our approach utilizes a single-stage reinforcement learning scheme, mapping raw depth inputs and proprioception directly to joint actions, without relying on external state estimation. Extensive field experiments on a full-size humanoid demonstrate that our policy enables robust traversal of stairs, slopes, and discrete gaps at speeds up to 2.5 m/s. The training and deployment code is open-sourced to facilitate reproducible research and deployment on real robots with minimal hardware modifications.
           </p>
         </div>
       </div>
